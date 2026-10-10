@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="건강과 의료 정보를 증상, 응급처치, 진료과, 생활습관별로 찾아볼 수 있도록 준비 중인 EvoCocoons 프로젝트입니다.">
+  <title>EvoCocoons 건강·의료·운동 정보 | 구축 중</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;color:#1e293b;background:#f8fafc}
+    *{box-sizing:border-box}body{margin:0;line-height:1.6}a{color:inherit}header{background:#fff;border-bottom:1px solid #e2e8f0}
+    .wrap{max-width:1100px;margin:auto;padding:24px}header .wrap{padding-top:16px;padding-bottom:16px}
+    .brand{font-weight:800;color:#0f766e;text-decoration:none;letter-spacing:-.02em}nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}nav a{font-size:.92rem;text-decoration:none}
+    h1{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.03em;line-height:1.3}h2{font-size:1.32rem}
+    .hero{padding-top:26px;padding-bottom:16px}.lead{max-width:700px;color:#475569}.search{display:block;font-size:.9rem;font-weight:650}
+    input{width:100%;max-width:700px;padding:15px;border:1px solid #94a3b8;border-radius:12px;margin-top:8px;font:inherit;background:#fff}
+    .notice{border-left:4px solid #e2a231;background:#fffbeb;padding:14px 18px;margin:18px 0;border-radius:6px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:13px}
+    .card{border:1px solid #e2e8f0;border-radius:13px;padding:18px;background:white}
+    .card h3{margin:0 0 8px;font-size:1.08rem}.card p{margin:0;color:#475569;font-size:.91rem}
+    .tag{font-size:.76rem;border:1px solid #cbd5e1;border-radius:99px;padding:3px 9px;display:inline-block;margin-bottom:10px;color:#475569}
+    .muted{color:#64748b;font-size:.88rem}.section{margin:30px 0}
+    .filterbox{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}button{border:1px solid #cbd5e1;border-radius:30px;background:#fff;padding:8px 11px;cursor:pointer}
+    button[aria-pressed="true"]{background:#115e59;color:white;border-color:#115e59}
+    footer{background:#e2e8f0;margin-top:46px;font-size:.86rem;color:#475569}
+    :focus-visible{outline:3px solid #0d9488;outline-offset:3px}
+    @media(max-width:600px){.wrap{padding:18px}.grid{grid-template-columns:1fr}nav{gap:9px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="brand" href="./">EvoCocoons · Health</a>
+    <nav aria-label="주요 메뉴"><a href="#categories">분야별 찾기</a><a href="#topics">주제 검색</a><a href="#policy">정보 검증</a></nav>
+  </div></header>
+  <main class="wrap">
+    <section class="hero"><h1>몸이 불편할 때, 무엇부터 알아봐야 할까요?</h1>
+      <p class="lead">응급처치, 증상, 신체 부위, 진료과, 운동, 생활습관을 한 곳에서 찾아보도록 구축 중입니다. 지금은 분류 체계를 미리 살펴볼 수 있으며, 의료 내용은 검증을 마친 후 공개합니다.</p>
+      <label class="search" for="search">관심 주제 검색</label>
+      <input id="search" type="search" placeholder="예: 화상, 치과, 스마트폰, 요가" autocomplete="off" aria-describedby="count">
+      <div class="notice" role="note"><strong>먼저 안전을 확인하세요.</strong> 의식이 없거나 정상 호흡이 없을 때, 갑작스러운 심한 가슴 통증이나 호흡곤란이 있을 때는 정보를 검색하느라 지체하지 말고 119에 신고하세요.</div>
+    </section>
+    <section class="section" id="categories"><h2>분야별 정보 찾기</h2><p class="muted">현재 메뉴 구조 검토 단계입니다. 각 항목의 설명은 의료 조언이 아닙니다.</p><div class="grid" id="groups"></div></section>
+    <section class="section" id="topics"><h2>주제 목록</h2><div class="filterbox" id="filters" role="group" aria-label="분야 필터"></div><p class="muted" id="count" aria-live="polite"></p><div class="grid" id="cards"></div></section>
+    <section class="section" id="policy"><h2>정보 검증 기준</h2>
+      <p>공공기관과 검증된 의료자료의 개정일을 확인합니다. 위험 신호를 먼저 안내하고, 의과·치과·한의과 등 각 치료법의 근거와 한계를 구분합니다. 의료정보와 광고는 분리하며, 성형·미용 정보는 건강한 선택과 안전한 상담을 중심으로 제공합니다.</p>
+      <p class="muted">현재 이 사이트는 검수 전 분류 시안으로, 진단이나 개별 치료 판단을 제공하지 않습니다.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">EvoCocoons Health · 의료정보 검증 전 탐색용 시안 · 긴급상황 119</div></footer>
+<script>
+"use strict";
+const groupEl=document.querySelector("#groups"),cardsEl=document.querySelector("#cards"),filtersEl=document.querySelector("#filters"),countEl=document.querySelector("#count"),searchEl=document.querySelector("#search");
+let catalog={groups:[],cards:[]},selected="all";
+function el(tag,text,className){const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;}
+function render(){
+const q=searchEl.value.trim().toLocaleLowerCase("ko");
+const matches=catalog.cards.filter(c=>(selected==="all"||selected===c.group)&&[c.title,c.search,c.description].join(" ").toLocaleLowerCase("ko").includes(q));
+cardsEl.replaceChildren();for(const c of matches){const card=el("article",undefined,"card"),tag=el("span",catalog.groups.find(g=>g.id===c.group)?.title??c.group,"tag");card.append(tag,el("h3",c.title),el("p",c.description),el("p",c.status,"muted"));cardsEl.append(card);}countEl.textContent=matches.length+"개 주제 · 의학적 설명은 검증 후 공개됩니다."; 
+}
+function setup(){
+for(const g of catalog.groups){const card=el("section",undefined,"card");card.append(el("h3",g.title),el("p",g.description));groupEl.append(card);}
+for(const g of [{id:"all",title:"전체"},...catalog.groups]){const b=el("button",g.title);b.type="button";b.setAttribute("aria-pressed",String(g.id===selected));b.addEventListener("click",()=>{selected=g.id;for(const n of filtersEl.children)n.setAttribute("aria-pressed",String(n===b));render();});filtersEl.append(b);}
+render();
+}
+fetch("./data/discovery_catalog.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Catalog not found");return r.json()}).then(data=>{catalog=data;setup();}).catch(()=>{countEl.textContent="목록을 불러오지 못했습니다. 잠시 후 다시 확인해 주세요.";});
+searchEl.addEventListener("input",render);
+</script>
+</body></html>
