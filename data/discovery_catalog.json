@@ -1,0 +1,213 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-10",
+  "publication": "CATEGORY_DISCOVERY_ONLY_NO_MEDICAL_ADVICE",
+  "groups": [
+    {
+      "id": "first-aid",
+      "title": "응급처치",
+      "description": "화상·찰과상·기도폐쇄·심폐소생술 등 상황별 대처",
+      "caution": "응급상황에서는 즉시 119에 신고하세요."
+    },
+    {
+      "id": "symptoms",
+      "title": "증상으로 찾기",
+      "description": "어디가 어떻게 불편한지부터 찾아보기",
+      "caution": "증상만으로 질병을 확정할 수 없습니다."
+    },
+    {
+      "id": "body",
+      "title": "신체 부위별",
+      "description": "눈·입·목·가슴·복부·허리·손·발 등",
+      "caution": "심각한 경고 신호가 있으면 먼저 응급 진료를 받으세요."
+    },
+    {
+      "id": "specialties",
+      "title": "진료과별",
+      "description": "치과·내과·안과·소아청소년과·외과 등",
+      "caution": "진료과 안내는 확정 진단이 아닙니다."
+    },
+    {
+      "id": "traditions",
+      "title": "치료 접근법",
+      "description": "현대의학·한의학·보완·통합의학의 근거 비교",
+      "caution": "치료의 효과와 안전성은 개별 방법별로 평가합니다."
+    },
+    {
+      "id": "cosmetic",
+      "title": "성형·미용의료",
+      "description": "시술 전에 알아야 할 안전·부작용·회복 정보",
+      "caution": "외모에 대한 불안을 부추기지 않습니다."
+    },
+    {
+      "id": "habits",
+      "title": "건강을 해치는 습관",
+      "description": "스마트폰 자세·담배·음주·짠 음식·수면 부족",
+      "caution": "실천할 수 있는 건강한 대안을 함께 제시합니다."
+    },
+    {
+      "id": "exercise",
+      "title": "운동·예방",
+      "description": "요가·웨이트·러닝의 바른 자세와 주의점",
+      "caution": "운동 중 갑작스러운 심한 통증이 생기면 중단하고 평가받으세요."
+    },
+    {
+      "id": "nutrition",
+      "title": "음식·영양",
+      "description": "영양의 근거와 식습관 개선 정보",
+      "caution": "의학적 주장과 제휴 광고를 분리합니다."
+    },
+    {
+      "id": "sports",
+      "title": "스포츠 정보",
+      "description": "축구·야구·농구 등 경기 일정과 공식 결과",
+      "caution": "스포츠 기록과 의료정보는 별도 검증합니다."
+    }
+  ],
+  "cards": [
+    {
+      "id": "H001",
+      "group": "first-aid",
+      "title": "화상",
+      "search": "화상을 입었을 때",
+      "description": "상황별·연령별 응급 대응",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H002",
+      "group": "first-aid",
+      "title": "찰과상",
+      "search": "넘어져서 피부가 까졌을 때",
+      "description": "상처 관리와 진료 필요 신호",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H003",
+      "group": "first-aid",
+      "title": "기도폐쇄",
+      "search": "음식이 목에 걸렸을 때",
+      "description": "성인·소아·영아 구분",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H004",
+      "group": "first-aid",
+      "title": "심폐소생술",
+      "search": "반응이 없고 정상 호흡을 하지 않을 때",
+      "description": "119·AED·전문교육 연계",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H005",
+      "group": "symptoms",
+      "title": "가슴 통증",
+      "search": "가슴 부근이 아플 때",
+      "description": "위험 신호를 먼저 확인",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H006",
+      "group": "symptoms",
+      "title": "어지럼",
+      "search": "어지럽고 중심 잡기가 어려울 때",
+      "description": "상황별 원인과 진료 안내",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H007",
+      "group": "specialties",
+      "title": "치과",
+      "search": "치아·잇몸·턱 관련 진료",
+      "description": "치과 진료 분야",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H008",
+      "group": "specialties",
+      "title": "안과",
+      "search": "눈 통증·충혈·시력 변화",
+      "description": "안과 진료 분야",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H009",
+      "group": "specialties",
+      "title": "소아청소년과",
+      "search": "어린이·청소년 건강",
+      "description": "성인과 다른 기준",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H010",
+      "group": "specialties",
+      "title": "흉부외과",
+      "search": "심장·폐·흉부 수술 관련 진료",
+      "description": "공식 진료과 명칭 확인",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H011",
+      "group": "traditions",
+      "title": "치료 접근법 비교",
+      "search": "현대의학·한의학의 차이",
+      "description": "근거 수준·안전·상호작용",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H012",
+      "group": "cosmetic",
+      "title": "미용시술 전 확인사항",
+      "search": "상담·합병증·회복·사후관리",
+      "description": "충분한 정보와 선택권",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H013",
+      "group": "habits",
+      "title": "스마트폰 자세",
+      "search": "장시간 고개를 숙이는 자세",
+      "description": "목과 어깨 부담",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H014",
+      "group": "habits",
+      "title": "흡연·간접흡연",
+      "search": "담배 노출의 위험",
+      "description": "예방과 지원 정보",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H015",
+      "group": "habits",
+      "title": "음주",
+      "search": "음주가 건강에 미치는 영향",
+      "description": "위험 예방",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H016",
+      "group": "habits",
+      "title": "짠 음식",
+      "search": "나트륨 섭취와 건강",
+      "description": "식품 표시 확인",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H017",
+      "group": "exercise",
+      "title": "스쿼트",
+      "search": "바른 자세와 흔한 오류",
+      "description": "무릎·허리 안전",
+      "status": "검수 준비 중"
+    },
+    {
+      "id": "H018",
+      "group": "nutrition",
+      "title": "영양 정보",
+      "search": "영양과 증상 관련 주장 검증",
+      "description": "과장 광고 예방",
+      "status": "검수 준비 중"
+    }
+  ]
+}
